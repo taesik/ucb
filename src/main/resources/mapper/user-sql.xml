@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="in.kbfg.ucb.mybatis.mapper.UserMapper">
+
+    <insert id="mergeUserInfo" parameterType="UserEntity" useGeneratedKeys="true" keyProperty="idx">
+        insert into g_sql_etc_users (id, name, auth, last_login_date) values
+            (#{id}, #{name}, #{auth}, now())
+        on duplicate key update last_login_date = now()
+    </insert>
+
+    <select id="getUserInfo" resultType="UserEntity" parameterType="String">
+        select * from g_sql_etc_users where id = #{id}
+    </select>
+
+</mapper>

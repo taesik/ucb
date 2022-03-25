@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="in.kbfg.ucb.mybatis.mapper.TestMapper">
+
+    <select id="helloName" resultType="String" parameterType="map">
+        select concat('Hello ', #{name}) as test;
+    </select>
+
+    <select id="testModel" resultType="TestEntity" parameterType="TestEntity">
+        select #{idx} + 2 as idx, concat('Hello ', #{testName}) as test_name;
+    </select>
+
+</mapper>

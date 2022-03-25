@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ISign Login</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+
+<div th:if="${isErrorPage.toString().equals('true') and !resultCode.toString().equals('000000')}">
+    <p>토큰검증이 실패하였습니다.</p>
+    <p th:text="${resultCode}">resultCode 영역</p>
+</div>
+
+<div th:unless="${isErrorPage.toString().equals('true') and !resultCode.toString().equals('000000')}">
+    <!--
+    <table>
+        <tr>
+            <td>사용자ID</td>
+            <td th:text="${id}">id 영역></td>
+        </tr>
+        <tr>
+            <td>세션ID</td>
+            <td th:text="${secureSessionId}">secureSessionId 영역</td>
+        </tr>
+    </table>
+    <br>BODY부분은 취약점으로 확인될 수 있으므로 테스트목적으로만 사용부탁드립니다.
+    -->
+</div>
+<script th:unless="${isErrorPage.toString().equals('true') and !resultCode.toString().equals('000000')}">
+    window.location.href = 'http://localhost:3000/';
+</script>
+
+</body>
+</html>

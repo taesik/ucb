@@ -1,0 +1,486 @@
+[ Neo4J ]
+
+mosnlp.takeview.co.kr
+jinseok / 김진석
+
+mindelixir.ink
+
+
+[ http://10.81.31.15:7474/api/v1/triple-data/news/3c2edd2afd148e1684244c77f58efa66 ]
+
+[
+  {
+    "content": "string",
+    "triple_data_list": [
+      {
+        "index": "string",
+        "type": "string",
+        "subject": "string",
+        "predicate": "string",
+        "values": [
+          "string"
+        ]
+      }
+    ]
+  }
+]
+
+[
+  {
+    "content": "한국축구 대표팀 &#39;벤투호&#39;가 2022 카타르 월드컵 최종예선에서 이란, 아랍에미리트(UAE), 이라크, 시리아, 레바논과 함께 A조에서 본선행 티켓을 다툰다.",
+    "triple_data_list": [
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "subject": "한국축구 대표팀 &#39;벤투호&#39;가다",
+        "predicate": "다투다",
+        "values": [
+          "2022 카타르 월드컵 최종예선",
+          "이다",
+          "아랍에미리트",
+          "이라크",
+          "시리아",
+          "레바논",
+          "함께 A조",
+          "본선행 티켓"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "상대팀들이 까다로운 중동팀들이어서 카타르행이 쉽지 않은 행보가 될 전망이다.",
+    "triple_data_list": [
+      {
+        "index": "0",
+        "type": "SECONDARY",
+        "subject": "상대팀들",
+        "predicate": "ISA",
+        "values": [
+          "까다로운 중동팀들"
+        ]
+      },
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "subject": "카타르행",
+        "predicate": "ISA",
+        "values": [
+          "전망"
+        ]
+      },
+      {
+        "index": "0",
+        "type": "PRENOUN",
+        "subject": "전망",
+        "predicate": "되다",
+        "values": [
+          "행보"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "자료=아시아축구연맹 연합뉴스",
+    "triple_data_list": [
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "predicate": "ISA",
+        "values": [
+          "자료=아시아축구연맹 연합뉴스"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "한국은 1일(한국시간) 말레이시아 쿠알라룸푸르에서 열린 카타르 월드컵 아시아지역 최종예선 조 추첨에서 이란, UAE, 이라크, 시리아, 레바논과 함께 A조로 묶였다.",
+    "triple_data_list": [
+      {
+        "index": "0",
+        "type": "PARENTHESIS",
+        "subject": "1일",
+        "predicate": "ISA",
+        "values": [
+          "한국시간"
+        ]
+      },
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "subject": "한국",
+        "predicate": "묶이다",
+        "values": [
+          "카타르 월드컵 아시아지역 최종예선 조 추첨",
+          "이다",
+          "uae",
+          "이라크",
+          "시리아",
+          "레바논",
+          "함께 A조"
+        ]
+      },
+      {
+        "index": "0",
+        "type": "PRENOUN",
+        "subject": "카타르 월드컵 아시아지역 최종예선 조 추첨",
+        "predicate": "열리다",
+        "values": [
+          "1일 말레이시아 쿠알라룸푸르"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "B조는 일본, 호주, 사우디아라비아, 중국, 오만, 베트남으로 꾸려졌다.",
+    "triple_data_list": [
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "subject": "B조",
+        "predicate": "꾸리다",
+        "values": [
+          "일본",
+          "호주",
+          "사우디아라비아",
+          "중국",
+          "오만",
+          "베트남"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "최종예선은 9월(2일��7일), 10월(7일��12일), 11월(11일��16일), 2022년 1월 27일, 2022년 2월 1일, 2022년 3월(24일��29일)에 열린다.",
+    "triple_data_list": [
+      {
+        "index": "0",
+        "type": "PARENTHESIS",
+        "subject": ", 2022년 1월 27일, 2022년 2월 1일, 2022년 3월",
+        "predicate": "ISA",
+        "values": [
+          "24일��29일"
+        ]
+      },
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "subject": "최종예선",
+        "predicate": "열리다",
+        "values": [
+          "9월",
+          "10월",
+          "11월",
+          "2022년 1월 27일",
+          "2022년 2월 1일",
+          "2022년 3월"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "카타르 월드컵에 배당된 아시아의 본선행 티켓은 4.5장이다.",
+    "triple_data_list": [
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "subject": "아시아의 본선행 티켓",
+        "predicate": "ISA",
+        "values": [
+          "4.5장"
+        ]
+      },
+      {
+        "index": "0",
+        "type": "PRENOUN",
+        "subject": "아시아의 본선행 티켓",
+        "predicate": "배당되다",
+        "values": [
+          "카타르 월드컵"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "A��B조 상위 1&sim;2위 팀이 본선에 직행하고, 각 조 3위 팀끼리 플레이오프를 치른 뒤 대륙별 플레이오프를 통해 본선행 티켓 주인공을 결정한다.",
+    "triple_data_list": [
+      {
+        "index": "1",
+        "type": "SECONDARY",
+        "subject": "A��B조 상위 1&sim;2위 팀",
+        "predicate": "직행하다",
+        "values": [
+          "본선"
+        ]
+      },
+      {
+        "index": "0",
+        "type": "SECONDARY",
+        "subject": "A��B조 상위 1&sim;2위 팀",
+        "predicate": "통하다",
+        "values": [
+          "뒤 대륙별 플레이오프"
+        ]
+      },
+      {
+        "index": "0",
+        "type": "PRENOUN",
+        "subject": "뒤 대륙별 플레이오프",
+        "predicate": "치르다",
+        "values": [
+          "각 조 3위 팀끼리 플레이오프"
+        ]
+      },
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "subject": "A��B조 상위 1&sim;2위 팀",
+        "predicate": "결정하다",
+        "values": [
+          "본선행 티켓 주인공"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "&#39;",
+    "triple_data_list": [
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "predicate": "ISA",
+        "values": [
+          "39"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "2022 카타르 월드컵 최종예선 조 편성(세계 랭킹)",
+    "triple_data_list": [
+      {
+        "index": "0",
+        "type": "PARENTHESIS",
+        "subject": "2022 카타르 월드컵 최종예선 조 편성",
+        "predicate": "ISA",
+        "values": [
+          "세계 랭킹"
+        ]
+      },
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "predicate": "ISA",
+        "values": [
+          "2022 카타르 월드컵 최종예선 조 편성"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "A조 = 한국(39위) 이란(31위) UAE(73위) 이라크(68위) 시리아(79위) 레바논(93위)",
+    "triple_data_list": [
+      {
+        "index": "0",
+        "type": "PARENTHESIS",
+        "subject": "A조 = 한국",
+        "predicate": "ISA",
+        "values": [
+          "39위",
+          "31위",
+          "73위",
+          "68위",
+          "79위",
+          "93위"
+        ]
+      },
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "predicate": "ISA",
+        "values": [
+          "A조 = 한국이란 UAE 이라크 시리아 레바논"
+        ]
+      },
+      {
+        "index": "0",
+        "type": "PRENOUN",
+        "subject": "UAE 이라크 시리아 레바논",
+        "predicate": "ISA",
+        "values": [
+          "A조 = 한국"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "B조 = 일본(27위) 호주(41위) 사우디아라비아(65위) 중국(77위) 오만(80위) 베트남(92위)",
+    "triple_data_list": [
+      {
+        "index": "0",
+        "type": "PARENTHESIS",
+        "subject": "B조 = 일본",
+        "predicate": "ISA",
+        "values": [
+          "27위",
+          "41위",
+          "65위",
+          "77위",
+          "80위",
+          "92위"
+        ]
+      },
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "predicate": "ISA",
+        "values": [
+          "B조 = 일본 호주 사우디아라비아 중국 오만 베트남"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "관련기사",
+    "triple_data_list": [
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "predicate": "ISA",
+        "values": [
+          "관련기사"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "[종합] 벤투호, 월드컵 최종예선 이란, UAE, 이라크 등과 A조에서 격돌",
+    "triple_data_list": [
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "predicate": "ISA",
+        "values": [
+          "격돌",
+          "벤투호",
+          "월드컵 최종예선",
+          "이다",
+          "uae",
+          "이라크",
+          "A조"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "[속보] 벤투호, 월드컵 최종예선서 이란\u001aUAE\u001a이라크\u001a시리아와 A조",
+    "triple_data_list": [
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "predicate": "ISA",
+        "values": [
+          "이란\u001aUAE\u001a이라크\u001a시리아와 A조",
+          "벤투호",
+          "월드컵 최종예선"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "[속보] 서울시, 새거리두기 1주일 연기...",
+    "triple_data_list": [
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "predicate": "ISA",
+        "values": [
+          "서울시",
+          "새거리두기 1주일 연기"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "중대본에 건의",
+    "triple_data_list": [
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "predicate": "ISA",
+        "values": [
+          "건의",
+          "중대본"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "1세대 풍경화가 최덕휴화백, 탄생 1백주년 기념전 내년 대대적으로 열려",
+    "triple_data_list": [
+      {
+        "index": "0",
+        "type": "SECONDARY",
+        "subject": "1세대 풍경화가",
+        "predicate": "ISA",
+        "values": [
+          "최덕휴화백"
+        ]
+      },
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "subject": "1세대 풍경화가",
+        "predicate": "열리다",
+        "values": [
+          "탄생 1백주년 기념전 내년 대대적"
+        ]
+      }
+    ]
+  },
+  {
+    "content": "[속보] 오거돈 공대위 \"항소 예정, 권력형 성폭력 뿌리뽑는데는 부족\"",
+    "triple_data_list": [
+      {
+        "index": "0",
+        "type": "SECONDARY",
+        "predicate": "ISA",
+        "values": [
+          "오거돈 공대위 \"항소 예정"
+        ]
+      },
+      {
+        "index": "-1",
+        "type": "MAIN",
+        "subject": "권력형 성폭력 뿌리뽑는데",
+        "predicate": "ISA",
+        "values": [
+          "부족"
+        ]
+      }
+    ]
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

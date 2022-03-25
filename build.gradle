@@ -1,0 +1,50 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.6'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id 'war'
+}
+
+group = 'in.kbfg'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '8'
+apply plugin: 'war'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+bootWar.enabled = false
+war.enabled = true
+
+dependencies {
+	implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
+	implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+	implementation 'com.google.code.gson:gson:2.8.8'
+
+	implementation 'org.elasticsearch:elasticsearch:7.15.1'
+	implementation 'org.elasticsearch.client:elasticsearch-rest-client:7.15.1'
+	implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:7.15.1'
+
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
+
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}
